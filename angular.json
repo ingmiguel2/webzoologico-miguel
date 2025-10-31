@@ -27,6 +27,8 @@
             "styles": [
               "src/styles.css"
             ]
+
+
           },
           "configurations": {
             "production": {
@@ -88,5 +90,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "261d1599-f2de-4a3a-b788-fb7d9e63195b"
   }
 }

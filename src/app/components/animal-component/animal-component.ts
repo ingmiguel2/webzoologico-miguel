@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { AnimalService } from '../../services/animal-service';
 
 @Component({
   selector: 'app-animal-component',
@@ -7,6 +8,18 @@ import { FormsModule } from '@angular/forms';
   templateUrl: './animal-component.html',
   styleUrl: './animal-component.css',
 })
+
 export class AnimalComponent {
-  titulo = "Animalitos!!";
+    animalList:any= [];
+
+ constructor(private animalService:AnimalService) {} 
+ getAllAnimals() {
+   this.animalService.getAllAnimalsData().subscribe((data: {}) => {
+   this.animalList=data;
+  });
+ }
+  ngOnInit() {
+ this.getAllAnimals();
+ }
+
 }
