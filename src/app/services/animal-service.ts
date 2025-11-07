@@ -16,4 +16,10 @@ export class AnimalService {
   return this.http.get<any>(this.apiUri)
  }
 
+newAnimal(data: any): Observable<any> {
+    return this.http.post<any>(
+      '/api/animalitos',
+      data,
+      { headers: this.httpOptions });
+  }
 }
