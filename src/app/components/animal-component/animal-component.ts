@@ -50,7 +50,7 @@ export class AnimalComponent {
         this.router.navigate(['/animales'])
         .then(() => {
           this.newMessage('Registro exitoso');
-          this.animalForm.reset();
+                this.animalForm.reset();
           this.getAllAnimals(); // 🔄 actualiza la lista sin recargar
         })
       }

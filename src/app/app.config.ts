@@ -7,6 +7,7 @@ import { provideToastr, ToastrModule } from 'ngx-toastr';
 import { provideAnimations, provideNoopAnimations } from '@angular/platform-browser/animations';
 
 
+
 export const appConfig: ApplicationConfig = {
   providers: [
     provideBrowserGlobalErrorListeners(),
