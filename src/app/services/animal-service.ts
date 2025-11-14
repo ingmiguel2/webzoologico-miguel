@@ -33,6 +33,4 @@ export class AnimalService {
     return this.http.get<any>(this.apiUri+'/'+ id,
       { headers: this.httpOptions });
   }
-
-  
 }
